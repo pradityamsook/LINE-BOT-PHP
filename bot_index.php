@@ -23,9 +23,7 @@ if (!is_null($events['events'])) {
 
             $messages = [
               'type' => 'text',
-              'text' => 'สวัสดี /n
-                         ยินดีรับใช้ /n
-                         กด a ตรวจสอบการพยากรณ์อากาศ'
+              'text' => 'สวัสดี ยินดีรับใช้ กด a ตรวจสอบการพยากรณ์อากาศ'
             ];
 
             // Build message to reply back
