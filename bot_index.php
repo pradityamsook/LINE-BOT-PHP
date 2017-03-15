@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
             // Get replyToken
             $replyToken = $event['replyToken'];
 
-            $message = [
+            $messages = [
               'type' => 'text',
               'text' => 'Hello'
             ];
@@ -33,7 +33,7 @@ if (!is_null($events['events'])) {
             $url = 'https://api.line.me/v2/bot/message/reply';
             $data = [
               'replyToken' => $replyToken,
-              'messages' => [$message],
+              'messages' => [$messages],
             ];
 
             $post = json_encode($data);
