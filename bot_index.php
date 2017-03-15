@@ -21,11 +21,20 @@ if (!is_null($events['events'])) {
             // Get replyToken
             $replyToken = $event['replyToken'];
 
+            $message = [
+              'type' => 'text',
+              'text' => 'Hello'
+            ];
+
             // Build message to reply back
             // Enter your code here
 
             // Make a POST Request to Messaging API to reply to sender
             $url = 'https://api.line.me/v2/bot/message/reply';
+            $data = [
+              'replyToken' => $replyToken,
+              'message' => $message
+            ];
 
             $post = json_encode($data);
             $headers = array('Content-Type: application/json', 'Authorization: Bearer '.$access_token);
