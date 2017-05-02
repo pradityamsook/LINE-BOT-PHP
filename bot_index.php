@@ -34,7 +34,7 @@ if (!is_null($events['events'])) {
 
             // Build message to reply back
             
-            if ($event['message']['text'] == 'a'){
+            if ($event['message']['text'] == "a"){
                 $messages01;
             }
             // Enter your code here
