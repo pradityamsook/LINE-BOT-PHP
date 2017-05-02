@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
     foreach ($events['events'] as $event) {
         // Reply only when message sent is in 'text' format
         if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
-            //$bufferMessages = [3];
+            $bufferMessages = [3];
             // Get text sent
             $text = $event['message']['text'];
             // Get replyToken
@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
             // Build message to reply back
             
             if ($event['message']['text'] == "a"){
-                $messages01;
+                $bufferMessages[0] = $messages01;
             }
             // Enter your code here
 
@@ -43,7 +43,7 @@ if (!is_null($events['events'])) {
             $url = 'https://api.line.me/v2/bot/message/reply';
             $data = [
               'replyToken' => $replyToken,
-              'messages' => [$messages],[$messages01],
+              'messages' => $bufferMessages,
             ];
 
             $post = json_encode($data);
