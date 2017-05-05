@@ -37,13 +37,16 @@ if (!is_null($events['events'])) {
             if ($event['message']['text'] == "a"){
                 $bufferMessages[0] = $messages01;
             }
+            if($event['message'['text'] == ""){
+                
+            }
             // Enter your code here
 
             // Make a POST Request to Messaging API to reply to sender
             $url = 'https://api.line.me/v2/bot/message/reply';
             $data = [
               'replyToken' => $replyToken,
-              'messages' => $bufferMessages,$messages
+              'messages' => $bufferMessages,[$messages]
             ];
 
             $post = json_encode($data);
