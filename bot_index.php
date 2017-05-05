@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
             // Get replyToken
             $replyToken = $event['replyToken'];
 
-            $messages = [
+            $messages02 = [
               'type' => 'text',
               'text' => 'สวัสดี ยินดีรับใช้ กด a ตรวจสอบการพยากรณ์อากาศ'
             ];
@@ -37,8 +37,8 @@ if (!is_null($events['events'])) {
             if ($event['message']['text'] == "a"){
                 $bufferMessages[0] = $messages01;
             }
-            if($event['message'['text'] == ""){
-                $bufferMessages[1] = $messages;
+            if ($event['message']['text'] == ""){
+                $bufferMessages[1] = $messages02;
             }
             // Enter your code here
 
