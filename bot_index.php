@@ -38,7 +38,7 @@ if (!is_null($events['events'])) {
                 $bufferMessages[0] = $messages01;
             }
             if($event['message'['text'] == ""){
-                
+                $bufferMessages[1] = $messages;
             }
             // Enter your code here
 
@@ -46,7 +46,7 @@ if (!is_null($events['events'])) {
             $url = 'https://api.line.me/v2/bot/message/reply';
             $data = [
               'replyToken' => $replyToken,
-              'messages' => $bufferMessages,[$messages]
+              'messages' => $bufferMessages,
             ];
 
             $post = json_encode($data);
