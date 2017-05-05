@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
             if ($event['message']['text'] == "a"){
                 $bufferMessages[0] = $messages01;
             }
-            if ($event['message']['text'] == ""){
+            if ($event['message']['text'] == "Hi"){
                 $bufferMessages[1] = $messages02;
             }
             // Enter your code here
