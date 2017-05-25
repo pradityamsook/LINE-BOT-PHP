@@ -38,7 +38,8 @@ if (!is_null($events['events'])) {
 
             $predicMesage = [
                     'type' => 'image',
-                    'image' => $predic
+                    'originalContetnUrl' => $predic,
+                    'previewImageUrl' => $predic
             ];
 
             $stickerMessage = [ 
