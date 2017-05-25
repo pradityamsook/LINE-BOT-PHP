@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
             $stickerMessage = [ 
                 'type' => 'sticker',
                 'packageId' => '1',
-                'sticker' => '106'
+                'stickerId' => '106'
             ];
 
             // Build message to reply back
