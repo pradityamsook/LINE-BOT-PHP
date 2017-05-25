@@ -32,13 +32,13 @@ if (!is_null($events['events'])) {
                 'text' => 'ครับผม ได้ครับ'
              ];
             
-            $rawPredic = file_get_contents("https://cocobyte.herokuapp.com/line_val");
+            $rawPredic = file_get_contents("https://cocobyte.herokuapp.com/line_img");
             $predicDecode = json_decode($rawPredic, true);
             $predic = $predicDecode[0][1];
 
             $predicMesage = [
-                    'type' => 'text',
-                    'text' => $predic
+                    'type' => 'image',
+                    'image' => $predic
             ];
 
             $stickerMessage = [ 
