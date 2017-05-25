@@ -38,7 +38,7 @@ if (!is_null($events['events'])) {
 
             $predicMesage = [
                     'type' => 'image',
-                    'originalContetnUrl' => $predic,
+                    'originalContentUrl' => $predic,
                     'previewImageUrl' => $predic
             ];
 
