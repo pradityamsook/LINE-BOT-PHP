@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
                 'text' => 'ครับผม ได้ครับ'
              ];
             
-            $rawPredic = file_get_contents("https://github.com/pradityamsook/LINE-BOT-PHP/blob/master/film.jpg?raw=true");
+            $rawPredic = file_get_contents("https://power-ranger03.herokuapp.com/film.jpg");
             $predicDecode = json_decode($rawPredic, true);
             $predic = $predicDecode[0][1];
 
