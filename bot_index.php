@@ -32,7 +32,7 @@ if (!is_null($events['events'])) {
                 'text' => 'ครับผม ได้ครับ'
              ];
             
-            $rawPredic = file_get_contents("https://tgr-tgr.herokuapp.com/");
+            $rawPredic = file_get_contents("https://cocobyte.herokuapp.com/line_val");
             $predicDecode = json_decode($rawPredic, true);
             $predic = $predicDecode[0][1];
 
