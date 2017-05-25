@@ -31,6 +31,21 @@ if (!is_null($events['events'])) {
                 'type' => 'text',
                 'text' => 'ครับผม ได้ครับ'
              ];
+            
+            $rawPredic = file_get_contents("https://tgr-tgr.herokuapp.com/");
+            $predicDecode = json_decode($rawPredic, true);
+            $predic = $predicDecode[0][1];
+
+            $predicMesage = [
+                    'type' => 'text',
+                    'text' => $predic
+            ];
+
+            $stickerMessage = [ 
+                'type' => 'sticker',
+                'packageId' => '1',
+                'sticker' => '106'
+            ];
 
             // Build message to reply back
             
@@ -39,6 +54,11 @@ if (!is_null($events['events'])) {
             }
             if ($event['message']['text'] == "Hi"){
                 $bufferMessages[0] = $messages02;
+            }
+            
+            if($event['message']['text'] == "b"){
+                $bufferMessages[0] = $predicMesage;
+                $bufferMessages[1] = $stickerMessage;
             }
             // Enter your code here
 
