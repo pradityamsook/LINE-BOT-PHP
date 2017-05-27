@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
               'type' => 'text',
               'text' => 'สวัสดี ยินดีรับใช้ กด a ตรวจสอบการพยากรณ์อากาศ'
             ];
-            
+            $bufferMessages[0] = $messages02;
             $messages01 = [
                 'type' => 'text',
                 'text' => 'ครับผม ได้ครับ'
