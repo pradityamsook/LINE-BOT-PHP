@@ -24,7 +24,8 @@ if (!is_null($events['events'])) {
 
             $messages02 = [
               'type' => 'text',
-              'text' => 'สวัสดี ยินดีรับใช้ กด a ตรวจสอบการพยากรณ์อากาศ'
+              'text' => 'สวัสดี ยินดีรับใช้ กด a อื่น'."\n"
+                        .'กด b ดูการแสดง'
             ];
             $bufferMessages[0] = $messages02;
             $messages01 = [
