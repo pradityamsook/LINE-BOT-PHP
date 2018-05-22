@@ -1,3 +1,3 @@
 <?php
-echo "Hello LINE BOT\n";
-echo "Testing Server";
+echo "<br>Hello LINE BOT</br>";
+echo "<br>Testing Server</br>";
